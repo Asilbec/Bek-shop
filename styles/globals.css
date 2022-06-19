@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -11,6 +13,127 @@ a {
   text-decoration: none;
 }
 
+body{
+  background-color: rgb(255, 255, 255);
+  overflow: overlay;
+}
+
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.main-container{
+  max-width: 1400px; 
+  margin: auto;
+  width: 100%;
+}
+
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.Shoe-collection-container{
+  margin: auto;
+  font-size: 10px;
+  text-align: center;
+  padding: 40px 10px
+}
+
+
+.Shoe-collection-container h1{
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+}
+
+
+.shoe-pruducts-collection-containers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  width: 100%;
+  min-height: 500px;
+  padding: 30px 0px;
+}
+
+.gift-pruducts-collection-containers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  width: 100%;
+  min-height: 500px;
+  padding: 30px 0px;
+}
+
+
+
+.index-explore-more-shoes-button{
+  width: 100px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 15px;
+  font-style: italic;
+  border: 1px solid black;
+  margin: 0px 0px 30px 0px;
+  transition: 0.4s ease-in-out;
+}
+
+.index-explore-more-shoes-button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+.footer-container-cont{
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 710px) {
+  .shoe-pruducts-collection-containers{
+    justify-content: center;
+  }
+  
+  .gift-pruducts-collection-containers{
+    justify-content: center;
+
+  }  
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 4px; 
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
