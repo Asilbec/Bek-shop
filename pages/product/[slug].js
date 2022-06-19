@@ -8,7 +8,7 @@ import { MayShoecard } from '../../components';
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { useStateContext } from '../../context/StateContext';
 import { toast } from 'react-hot-toast';
-
+import Image from 'next/image';
 function Item({ color, isSelected, onClick }) {
     return (
         <li className="item" onClick={onClick} >
@@ -81,7 +81,7 @@ const ProductDetails = ({ product, products }) => {
                     </div>
                     <div className="small-images-container">
                         {image?.map((item, i) => (
-                            <img
+                            <Image
                                 key={i}
                                 src={urlFor(item)}
                                 className={i === index ? 'small-image selected-image' : 'small-image'}
