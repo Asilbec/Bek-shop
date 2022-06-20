@@ -39,7 +39,8 @@ const Cart = () => {
   return (
     <div className="cart-wrapper" ref={cartRef}>
       <div className="cart-container">
-        <button
+        <div>
+                  <button
         type="button"
         className="cart-heading"
         onClick={() => {
@@ -50,7 +51,6 @@ const Cart = () => {
           <span className="heading">Your Cart</span>
           <span className="cart-num-items">({totalQuantities} items)</span>
         </button>
-
         {cartItems.length < 1 && (
           <div className="empty-cart">
             <AiOutlineShopping size={150} />
@@ -59,7 +59,7 @@ const Cart = () => {
                 type="button"
                 onClick={() =>{
                   setShowCart(false)
-                  document.body.classList.remove("disablez");
+                  document.getElementById('main-container').classList.remove("disablez");
                 } }
                 className="btn"
               >
@@ -67,8 +67,7 @@ const Cart = () => {
               </button>
           </div>
         )}
-
-        <div className="product-containerz">
+                <div className="product-containerz">
           {cartItems.length >= 1 && cartItems.map((item,index) => (
             <div className="product-in-cart" key={index}>
               <img src={urlFor(item?.image[0])} alt='none' className="cart-product-image" />
@@ -84,6 +83,11 @@ const Cart = () => {
             </div>
           ))}
         </div>
+        </div>
+
+        
+
+
         {cartItems.length >= 1 && (
           <div className="cart-bottom">
             <div className="total">
