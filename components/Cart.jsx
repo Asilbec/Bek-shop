@@ -7,9 +7,12 @@ import toast from 'react-hot-toast';
 import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
 import getStripe from '../lib/getStripe';
-import Image from 'next/image';
 
 const Cart = () => {
+
+
+
+
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, qty, toggleCartItemQuanitity, onRemove } = useStateContext();
 
@@ -33,8 +36,6 @@ const Cart = () => {
     stripe.redirectToCheckout({ sessionId: data.id });
   }
 
-
-
   return (
     <div className="cart-wrapper" ref={cartRef}>
       <div className="cart-container">
@@ -42,8 +43,9 @@ const Cart = () => {
         type="button"
         className="cart-heading"
         onClick={() => {
-          setShowCart(false)}
-          }>
+          setShowCart(false)
+          document.body.classList.remove("disablez")
+        }}>
           <AiOutlineLeft size={30} color='black' />
           <span className="heading">Your Cart</span>
           <span className="cart-num-items">({totalQuantities} items)</span>
@@ -57,6 +59,7 @@ const Cart = () => {
                 type="button"
                 onClick={() =>{
                   setShowCart(false)
+                  document.body.classList.remove("disablez");
                 } }
                 className="btn"
               >
@@ -88,7 +91,9 @@ const Cart = () => {
               <h3>${totalPrice.toFixed(2)}</h3>
             </div>
             <div className="btn-container">
-              <button type="button" onClick={handleCheckout} className="btn" >
+              <button type="button" onClick={()=> {
+                  
+                handleCheckout}} className="btn" >
                 Checkout
               </button>
             </div>

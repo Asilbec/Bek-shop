@@ -3,6 +3,9 @@ import { Product, Footer, Gift, Banner } from '../components'
 import { client } from '../lib/client'
 
 const Home = ({ products, bannerData, giftData }) => {
+
+
+
   return (
     <div>
       <Banner information={bannerData.length && bannerData[1]} />

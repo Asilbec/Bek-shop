@@ -15,8 +15,15 @@ a {
 
 body{
   background-color: rgb(255, 255, 255);
-  overflow: overlay;
+  overflow: auto;
+  
 }
+
+body .disalbe{
+  overflow: hidden;
+  max-height: 100vh;
+}
+
 
 h1,h2,h3,h4,h5,p{
   margin: 0;
@@ -30,6 +37,7 @@ h1,h2,h3,h4,h5,p{
   max-width: 1400px; 
   margin: auto;
   width: 100%;
+
 }
 
 
@@ -37,8 +45,6 @@ h1,h2,h3,h4,h5,p{
 .layout{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
   justify-content: center;
 }
 

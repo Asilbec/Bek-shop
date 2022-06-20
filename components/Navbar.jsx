@@ -10,6 +10,12 @@ const Navbar = () => {
 
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
+
+  function removeandshow(){
+    setShowCart(true)
+    document.getElementById('main-container').classList.add("disablez");
+  }
+
   return (
     <div className="navbar-container">
             <p className="logo">
@@ -34,7 +40,7 @@ const Navbar = () => {
         </Link>
       </div>
       </div>
-      <button type="button" onClick={() => {setShowCart(true)
+      <button type="button" onClick={() => {removeandshow()
       }} className="cart-icon" >
         <AiOutlineShopping />
         <span className="cart-item-qty">{totalQuantities}</span>

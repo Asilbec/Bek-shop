@@ -46,6 +46,7 @@ const ProductDetails = ({ product, products }) => {
     const handleBuyNow = () => {
         if (checkifSize()) {
             setShowCart(true);
+            document.getElementById('main-container').classList.remove("disablez");
         } else {
             console.log('nope')
             allmove()
