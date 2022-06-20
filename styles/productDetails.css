@@ -160,13 +160,13 @@
     top: 45px;
   }
   .buttons .add-to-cart{
-    width: 150px;
+    width: 120px;
     padding: 10px 20px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border: none;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     transform: scale(1.01, 1.01);
@@ -177,14 +177,14 @@
     transform:scale(1.01,1.01)
   }
   .buttons .buy-now{
-    width: 150px;
+    width: 120px;
     margin-left: 20px;
     padding: 10px 20px;
     background-color: #000000;
     color: white;
     border: none;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     transform: scale(1.01, 1.01);

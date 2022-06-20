@@ -17,6 +17,10 @@
     border-bottom: 1px solid black;
   }
 
+.navbar-container{
+  max-width: none;
+}
+
   .disable-scroll  {
     overscroll-behavior: hidden;
     background-color: #000000;
@@ -239,8 +243,9 @@ z-index: 11100 !important;
 
 
 .cart-product-image{
-  background-color: #ff0000;
+  background-color: #ffffff;
   width: 100%;
+  max-width: 280px;
 }
 
 
