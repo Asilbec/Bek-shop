@@ -95,9 +95,7 @@ const Cart = () => {
               <h3>${totalPrice.toFixed(2)}</h3>
             </div>
             <div className="btn-container">
-              <button type="button" onClick={()=> {
-                  
-                handleCheckout}} className="btn" >
+              <button type="button" onClick={handleCheckout} className="btn" >
                 Checkout
               </button>
             </div>

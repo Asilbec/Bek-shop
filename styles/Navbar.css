@@ -231,7 +231,7 @@ flex-direction: column;
   border-radius: 10px;
 width: 100%;
 padding: 30px 65px;
-color: rgb(255, 0, 0);
+color: rgb(0, 0, 0);
 }
 
 .product-in-cart{
@@ -295,7 +295,7 @@ text-align: right;
 }
 .cart-bottom{
 padding: 30px;
-margin-bottom: 100px;
+margin-bottom: 50px;
 }
 
 .total h3{
