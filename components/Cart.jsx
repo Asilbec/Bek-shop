@@ -11,8 +11,6 @@ import getStripe from '../lib/getStripe';
 const Cart = () => {
 
 
-
-
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, qty, toggleCartItemQuanitity, onRemove } = useStateContext();
 
@@ -36,8 +34,15 @@ const Cart = () => {
     stripe.redirectToCheckout({ sessionId: data.id });
   }
 
+  function closeCart(e){
+    console.log(e.target.className)
+    if(e.target.className ==='cart-wrapper'){
+      setShowCart(false)
+    }
+  }
+
   return (
-    <div className="cart-wrapper" ref={cartRef}>
+    <div onClick={(e)=>closeCart(e)} className="cart-wrapper" ref={cartRef}>
       <div className="cart-container">
         <div>
                   <button

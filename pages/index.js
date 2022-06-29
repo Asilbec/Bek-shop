@@ -17,7 +17,7 @@ const Home = ({ products, bannerData, giftData }) => {
           100% Authentic
         </p>
         <div className='shoe-pruducts-collection-containers'>
-          {products?.map((product, index) => index < 8 && (<Product key={product._id} product={product} />))}
+          {products?.map((product, index) => index < 14 && (<Product key={product._id} product={product} />))}
         </div>
         {/* 
                 <h1>
