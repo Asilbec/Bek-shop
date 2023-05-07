@@ -4,7 +4,6 @@ This is an e-commerce website built using Next.js, Sanity.io, Tailwind CSS, and 
 
 ## Features
 
-- User authentication with Firebase
 - Product listings with search and filter options
 - Dynamic product pages with product details, images, and reviews
 - Shopping cart with the ability to add, remove and update items
